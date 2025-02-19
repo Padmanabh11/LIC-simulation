@@ -14,7 +14,12 @@
  | Voltage source (V3) | -2 | Gate voltage for CMOSP |
  | MOSFET model library | .lib "tsmc018.lib"| Defines MOSFET characteristics |   
 
- ### 3. SIMULATION PROCEDURE
+ ###3.THEORY
+- A diode-connected CMOS transistor is a MOSFEt with gate and drain terminals shorted together so that it acts like a diode with voltage-dependent resistance.
+- This loop is usually employed in current mirrors to provide a reference voltage.
+- This behaves as a diode in certain analog signal-processing functions.
+
+ ### 4. SIMULATION PROCEDURE
  The whole procedure and analysis is done by replacing the resistor with CMOSP.
   We provide the same working conditions for the CMOSP and do the DC, Transient and AC analysis.
  ### 3.1 DC operating point analysis
@@ -25,7 +30,8 @@ According to the power budget given, the current value is 27µA. The operating a
  ###  Transient Response
 An alternating(sine) signal is given to the input source of 0.9v with 50m amplitude and 1k frequency.
 ![WhatsApp Image 2025-02-19 at 22 50 47_03beac1d](https://github.com/user-attachments/assets/a0aa0217-feb5-4bfe-b6d8-2865226822a9)
-Here we see a 180 degree phase shift between the input and output wavefprms.
+Here we see a 180 degree phase shift between the input and output waveforms.
+The gain of the circuit= 1.804 
 
 ### AC Analysis
 Small signal analysis is appiled to observe the frequency response of the circuit.
