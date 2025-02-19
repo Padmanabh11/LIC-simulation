@@ -37,11 +37,11 @@ The gain of the circuit= 1.804
 Small signal analysis is appiled to observe the frequency response of the circuit.
 ![WhatsApp Image 2025-02-19 at 22 51 15_12bd8274](https://github.com/user-attachments/assets/25ecdb27-9ca6-415f-a3c2-2cc6984b6ad5)
 
-### 4. OBSERVATION
+### 5. OBSERVATION
 - The PMOS regulates the drain current of M1, leading to more stable operating conditions.
 - It helps to keep the NMOS in saturation region of operation.
 
-### 5. CONCLUSION
+### 6. CONCLUSION
 - The CMOS circuit simulated using LTSpice is a saturated amplifier with stable gain, phase shift, and transient response.
 - The output characteristics and voltage gain measured validate its appropriateness for low-power amplification use.
 - More analysis, such as cut-off frequency and bandwidth determination, will assist in designing the circuit to meet particular design needs.
