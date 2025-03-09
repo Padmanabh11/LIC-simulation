@@ -129,13 +129,9 @@ We can observe that the calculated value of gain corresponds with the gain plott
 # COMPARISION OF REPLACEING THE RSS WITH CURRENT SOURCE AND A NMOSET:
 | Replacement type | Advantages | Disadvantages|
 |------------------| -----------| -------------|
-| Current Source   |  Provides higher gain due to increased impedance. |...|
-| Resistor| ...| ... |
-| MOSFET | ... | ,, |
-
-
-
-
+| Current Source   |  Provides higher gain due to increased impedance. | Current Source   |1. Provides higher gain due to increased impedance.<br> 2.Better CMRR, rejecting common-mode signals effectively.<br> 3.More predictable biasing, less affected by temperature and process variations.|1.Increased complexity, requiring additional circuit components.<br>2.Higher power consumption than a simple resistor.<br>3.Reduced voltage headroom, limiting signal swing.|
+| Resistor| 1.Simple and easy to implement.<br>2.More stable over temperature and process variations compared to MOSFET-based alternatives.<br>3. Lower power consumption than active sources .|1. Lower gain due to the resistance reducing differential impedance.<br>2.Lower CMRR compared to a current source.<br>3.Occupies more area in an integrated circuit.|
+| MOSFET | 1 Smaller chip area, making it ideal for ICs.<br>2.Higher gain when used as an active load.<br>3.Better matching in integrated circuits compared to resistors.| 1.Process-dependent characteristics, making it sensitive to fabrication variations.<br>2. More sensitive to temperature changes, requiring compensation techniques.<br>3.Complex biasing, needing careful design for stability. |
 
 
 # INFERENCE:
