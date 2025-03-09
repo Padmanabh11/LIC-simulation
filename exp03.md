@@ -129,7 +129,7 @@ We can observe that the calculated value of gain corresponds with the gain plott
 # COMPARISION OF REPLACEING THE RSS WITH CURRENT SOURCE AND A NMOSET:
 | Replacement type | Advantages | Disadvantages|
 |------------------| -----------| -------------|
-| Current Source   | - Provides higher gain due to increased impedance. - 111 |...|
+| Current Source   |  Provides higher gain due to increased impedance. |...|
 | Resistor| ...| ... |
 | MOSFET | ... | ,, |
 
