@@ -71,6 +71,67 @@ In order to determine the current value based on the specified ratio, the W/L va
 |2:1  |12.56          |16.87       |
 
 ## Variation observed when current mirror is in certain ratios:
+# 1:1 Ratio
+This is the standard configuration, where both transistors in the mirror have the same size.
+
+The mirrored current equals the reference current:
+
+I 
+OUT
+​
+ =I 
+REF
+​
+​
+ 
+The amplifier maintains a balanced operation with maximum symmetry in a differential pair.
+
+Provides standard gain and balanced voltage swing.
+
+# 1:2 Ratio 
+(Output transistor is twice the size of the reference)
+The mirrored current is doubled:
+
+I 
+OUT
+​
+ =2⋅I 
+REF
+​
+ 
+This increases the load current, which can reduce the output impedance of the mirror.
+
+In an amplifier, this results in:
+
+Lower gain, because Rout is reduced due to increased current.
+
+Possible clipping or reduced headroom, depending on biasing.
+
+Higher power consumption.
+
+#  2:1 Ratio 
+(Output transistor is half the size of the reference)
+The mirrored current is halved:
+
+I 
+OUT
+​
+ =0.5⋅I 
+REF
+​
+
+
+
+ 
+This reduces the load current, which can:
+
+Increase the output impedance, potentially increasing the gain.
+
+Improve power efficiency.
+
+Possibly degrade bandwidth, due to slower operation at lower currents.
+
+
 
 
 
@@ -127,3 +188,14 @@ I<sub>ref</sub> = 0.277mA\
 - The circuit operates as a differential amplifier based on a current mirror, with the output (Vout) being controlled by the difference between V2 and V3.
 - Stable current replication is guaranteed by the PMOS current mirror (M1-M2).
 - This circuit is helpful for signal processing and amplification in analog designs because it uses the NMOS differential pair (M3-M4) for amplification.
+
+  #  Conclusion:
+  The use of a current mirror as an active load in an amplifier circuit offers several advantages that make it a fundamental building block in modern analog design, particularly in integrated circuits. When implemented as an active load, the current mirror provides a high output impedance, which directly translates into increased voltage gain for the amplifier. Unlike passive resistors, current mirrors maintain a constant current over a wide range of output voltages, ensuring a more stable and predictable operating point. This is especially beneficial in differential amplifier configurations, where the current mirror enhances the common-mode rejection ratio (CMRR), allowing the circuit to effectively reject common-mode noise and focus on amplifying the differential signal. Additionally, by adjusting the ratio of the current mirror—such as 1:1, 1:2, or 2:1—designers can fine-tune the output current, which in turn affects gain, bandwidth, and power consumption. A 1:1 ratio maintains balance and symmetry, a 1:2 ratio increases current and bandwidth at the cost of gain, and a 2:1 ratio lowers current and power usage while boosting gain. These scaling capabilities add flexibility to the design, allowing trade-offs between performance parameters such as speed, gain, and power efficiency. Furthermore, current mirrors are compact and match well in integrated designs, making them more area- and process-efficient than passive components. Overall, current mirrors as active loads greatly improve the performance, stability, and design scalability of amplifier circuits, and their role is essential in achieving high-gain, low-power, and high-precision analog systems.
+
+
+
+
+
+
+
+
